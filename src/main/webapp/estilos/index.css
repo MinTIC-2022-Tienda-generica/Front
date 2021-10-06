@@ -1,0 +1,19 @@
+.ctn{
+    padding-top: 80px; /* Espacio entre el primer elemento y el borde de arriba de la pagina  */
+    height: 100vh;/* Abarca el 100% del espacio de una página de manera vertical */
+    display: flex; /* Debe alpicarse este display para aplicar justify-content */
+    justify-content: center; /* Centrado de página de manera horizontal */
+}
+
+
+@media (max-width:992px){ /* Usado para el responsive del sitio, modifica la página dependiendo del tamaño de esta.  */
+    /* Cuando la página sea igual omenos a 992px se modifica su estructura */
+    .ctn{
+        padding-top: 30px;
+        align-items:flex-start;/*Alinea la página hacia la izquierda de manera horizontal  */ 
+    }
+
+    img{
+        width: 100px; /* La imagen pasa de medida a 100px */
+    }
+  }

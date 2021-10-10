@@ -1,6 +1,6 @@
-var boton = document.getElementById('botonIngresar');
+var botonIngresar = document.getElementById('botonIngresar');
 
-boton.addEventListener("click",()=>{
+botonIngresar.addEventListener("click",()=>{
 	var usuario = document.getElementById("InputUsuario").value;
 	var contrasena = document.getElementById("Inputcontrasena").value;
 
@@ -24,7 +24,7 @@ boton.addEventListener("click",()=>{
 			error: function(error){					/* Cuando la petición salga mal. */
 				console.log("Error: ", error);
 				swal('Advertencia','Usuario y/o contraseña incorrecta','warning');
-		     }										
+		    }										
 		})	
 	}
 })

@@ -1,0 +1,16 @@
+.btn{
+	margin-right: 20px;
+	width: 150px;
+}
+
+.title-tg{
+	display: flex;
+	align-items: center;
+}
+
+@media (max-width:992px){ 		
+	.btn{
+	margin: 5px 8px;
+	width: 140px;
+	}
+}

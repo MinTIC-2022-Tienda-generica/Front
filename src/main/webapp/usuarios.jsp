@@ -18,7 +18,7 @@
     					</button>
 						<div class="title-tg me-auto" >
 	          				<img width="50" src="https://millennialsstore.pt/wp-content/uploads/2021/02/php-login-and-authentication-the-definitive-guide.png" alt="Logo tienda genérica" class="d-inline-block align-text-top">
-							<a class="navbar-brand" href="#">Tienda Genérica</a>
+							<a class="navbar-brand" href="usuarios.jsp">Tienda Genérica</a>
 						</div>
 						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       						<div class="offcanvas-header">

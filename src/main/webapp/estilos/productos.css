@@ -1,0 +1,38 @@
+.btn{
+	margin-right: 20px;
+	width: 150px;
+}
+
+.title-tg{
+	display: flex;
+	align-items: center;
+}
+
+.container-center{
+    padding-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.archivo{
+	display: flex;
+}
+
+.archivo input{
+	width: 80vh;
+}
+
+.archivo button{
+	margin-top: 20px;
+}
+
+@media (max-width:992px){ 		
+	.btn{
+	margin: 5px 8px;
+	width: 140px;
+	}
+	
+	.archivo input{
+	width: 35vh;
+}
+}

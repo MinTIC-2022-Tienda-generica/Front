@@ -56,16 +56,17 @@
 			<h1>Productos</h1>
 	       		<div class="col-lg-5 col-12 archivo">
 					<div class="mb-2" >
-						<label for="InputArchivo" class="form-label">Nombre del archivo</label>
-						<input type="text" class="form-control" id="InputArchivo" name="InputArchivo">
+						<label for="fileSelector" class="form-label">Nombre del archivo</label>
+						<input type="file" class="form-control" id="fileSelector" multiple="false"/>
 					</div>
-					<button type="submit" class="btn btn-primary" name="botonExaminar" id="botonExaminar">Examinar</button>
-	            </div>
-	            <div class="col-lg-12 col-12">
-					<div class="mt-3">
-	            		<button type="submit" class="btn btn-primary" name="botonCargar" id="botonCargar">Cargar</button>
-	               	</div>
-	            </div>            
+	            </div>         
+	        </div>
+	        <div class="row">  
+	           	<div class="col-lg-5 col-12 archivo">
+					<div class="mb-2" >
+						<button class="btn btn-primary" id="botonCargar">Cargar</button>
+					</div>
+	            </div>          
 	        </div>
 	    </div>
 		    	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Link de alertas independiente -->

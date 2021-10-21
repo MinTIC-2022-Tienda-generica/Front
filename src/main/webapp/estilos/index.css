@@ -1,18 +1,78 @@
-.container-center{
-    padding-top: 80px; 			/* Espacio entre el primer elemento y el borde de arriba de la pagina.*/
-    height: 100vh;				/* Abarca el 100% del espacio de una página de manera vertical.*/
-    display: flex; 				/* Debe alpicarse este display para aplicar justify-content.*/
-    justify-content: center; 	/* Centrado de página de manera horizontal.*/
+body {
+    margin: 0;
+    background-image: url("http://itectehuacan.edu.mx/TutoriasFinalSistema/Imagenes/backgrounds/1.jpg");
+    background-attachment: fixed;
+    font-family: 'Muli', sans-serif;
 }
 
-@media (max-width:992px){ 		/* Usado para el responsive del sitio, modifica la página dependiendo del tamaño de esta.*/
-    							/* Cuando la página sea igual omenos a 992px se modifica su estructura.*/
-    .ctn{
-        padding-top: 30px;
-        align-items:flex-start;	/*Alinea la página hacia la izquierda de manera horizontal.*/ 
-    }
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #fdfdfdb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .container-img{
-        display: none; 			/*Se desaparece el elemento.*/
-    }
-  }
+.header p{
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+.header__img{
+    width: 60px;
+    margin: 10px;
+}
+
+.header__menu {
+    margin-right: 30px;
+}
+
+.header__menu--profile{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.header__menu--profile a{
+    margin-right: 0px;
+    color: black;
+    font-weight: 400;
+}
+
+.header__menu--profile a:hover{
+    margin-right: 0px;
+    color: black;
+}
+
+.carousel-item img{
+    height: 500px;
+    background-size: auto;
+    opacity: 0.87;
+}
+
+.footer {
+    background-color: #fdfdfdb4;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.footer a{
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

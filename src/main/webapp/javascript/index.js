@@ -4,9 +4,7 @@ botonIngresar.addEventListener("click",()=>{
 	var usuario = document.getElementById("InputUsuario").value;
 	var contrasena = document.getElementById("Inputcontrasena").value;
 
-	if(usuario == "admininicial" && contrasena =="admin123456"){
-		window.location="usuarios.jsp";
-	}else if(usuario=="" || contrasena==""){
+	if(usuario=="" || contrasena==""){
 		swal("Error!", "Por favor ingrese su usuario y/o contraseña!", "error");
 	}else{
 		$.ajax({ 									/* Como realizar peticiones - base / http con js, función recibe como parametro un objeto de js*/

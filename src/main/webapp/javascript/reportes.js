@@ -12,11 +12,11 @@ listUsuarios.addEventListener("click",()=>{
 			for(let usuario of data){ /* Usuario de la base de datos */
 			console.log(usuario.cedulaUsuario)
 				let row = `<tr>
-								<td scope = "row"> -- <td/>
-								<td> ${usuario.cedulaUsuario} <td/>
-								<td> ${usuario.nombreUsuario} <td/>
-								<td> ${usuario.emailUsuario} <td/>
-								<td> ${usuario.usuario} <td/>
+								<td scope = "row">--</td>,
+								<td>${usuario.cedulaUsuario}</td>,
+								<td>${usuario.nombreUsuario}</td>,
+								<td>${usuario.emailUsuario}</td>,
+								<td>${usuario.usuario}</td>
 							</tr>` /*Uso de comilla simple invertida, donde creamos cada celda*/
 				html += row;	
 			}

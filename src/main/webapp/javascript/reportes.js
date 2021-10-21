@@ -10,12 +10,40 @@ listUsuarios.addEventListener("click",()=>{
 		success: function(data){  
 			let html = "";	/*Para que cada usuario se cree una fila */				 
 			for(let usuario of data){ /* Usuario de la base de datos */
+			console.log(usuario.cedulaUsuario)
 				let row = `<tr>
 								<td scope = "row"> -- <td/>
 								<td> ${usuario.cedulaUsuario} <td/>
 								<td> ${usuario.nombreUsuario} <td/>
 								<td> ${usuario.emailUsuario} <td/>
 								<td> ${usuario.usuario} <td/>
+							</tr>` /*Uso de comilla simple invertida, donde creamos cada celda*/
+				html += row;	
+			}
+			tableBody.innerHTML = html;
+		},							
+		error: function(error){					
+			console.log("Error: ", error);
+			},										
+	})	
+})
+
+
+listClientes.addEventListener("click",()=>{
+	const tableBody = document.getElementById('table-body'); /*Tomamos el valos de la tabla */
+	$.ajax({ 										
+			url: "http://localhost:8000/clientes",	
+			type: "GET", 							
+		success: function(data){  
+			let html = "";	/*Para que cada usuario se cree una fila */				 
+			for(let cliente of data){ /* Usuario de la base de datos */
+				let row = `<tr>
+								<td scope = "row"> -- <td/>
+								<td> ${cliente.cedulaCliente} <td/>
+								<td> ${cliente.nombreCliente} <td/>
+								<td> ${cliente.direccionCliente} <td/>
+								<td> ${cliente.telefonoCliente} <td/>
+								<td> ${cliente.emailCliente} <td/>
 							</tr>` /*Uso de comilla simple invertida, donde creamos cada celda*/
 				html += row;	
 			}

@@ -25,19 +25,19 @@
             <label for="canProducto" style="margin-right: 110px;">Cantidad</label>
             <label for="vlrProducto">Valor total</label><br>
             <input type="text" id="codProducto--1" name="codProducto--1">
-            <button id="btn__product">Consultar</button> 
+            <button id="btn__product--1">Consultar</button> 
             <input type="text" id="nomProducto--1" name="nomProducto--1">
             <input type="text" id="canProducto--1" name="canProducto--1">
             <input type="text" id="vlrProducto--1" name="vlrProducto--1">
             <br>
             <input type="text" id="codProducto--2" name="codProducto--2">
-            <button id="btn__product--1">Consultar</button> 
+            <button id="btn__product--2">Consultar</button> 
             <input type="text" id="nomProducto--2" name="nomProducto--2">
             <input type="text" id="canProducto--2" name="canProducto--2">
             <input type="text" id="vlrProducto--2" name="vlrProducto--2">
             <br>
             <input type="text" id="codProducto--3" name="codProducto--3">
-            <button id="btn__product--1">Consultar</button> 
+            <button id="btn__product--3">Consultar</button> 
             <input type="text" id="nomProducto--3" name="nomProducto--3">
             <input type="text" id="canProducto--3" name="canProducto--3">
             <input type="text" id="vlrProducto--3" name="vlrProducto--3">

@@ -61,11 +61,23 @@
 	               	</div>
 	            </div>            
 	        </div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">-</th>
+						<th scope="col">Cédula</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Correo Electrónico</th>
+						<th scope="col">Usuario</th>
+					</tr>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
 	    </div>
     <!-- Script de Bootstrap, SweetAlert, JQuery y js independiente. -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Link de alertas independiente -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Link de JQuery independiente -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script><!-- link de js Bootstrap -->
-    <script src="./javascript/usuarios.js"></script> <!-- Link de js independiente -->
+    <script src="./javascript/reportes.js"></script> <!-- Link de js independiente -->
 </body>
 </html>

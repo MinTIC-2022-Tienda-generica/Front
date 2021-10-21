@@ -27,8 +27,8 @@
             <input type="text" id="codProducto--1" name="codProducto--1">
             <button id="btn__product--1">Consultar</button> 
             <input type="text" id="nomProducto--1" name="nomProducto--1">
-            <input type="text" id="canProducto--1" name="canProducto--1">
-            <input type="text" id="vlrProducto--1" name="vlrProducto--1">
+            <input type="number" id="canProducto--1" name="canProducto--1">
+            <input type="number" id="vlrProducto--1" name="vlrProducto--1">
             <br>
             <input type="text" id="codProducto--2" name="codProducto--2">
             <button id="btn__product--2">Consultar</button> 
@@ -43,13 +43,13 @@
             <input type="text" id="vlrProducto--3" name="vlrProducto--3">
             <br>
             <label for="totalVenta">Total Venta</label><br>
-            <input type="text" id="totalVenta" name="totalVenta">
+            <input type="number" id="totalVenta" name="totalVenta">
             <br>
             <label for="totalIva">Total IVA</label><br>
-            <input type="text" id="totalIva" name="totalIva">
+            <input type="number" id="totalIva" name="totalIva">
             <br>
             <label for="total">Total con IVA</label><br>
-            <input type="text" id="total" name="total">
+            <input type="number" id="total" name="total">
             <br>
             <button id="btn__confirmar">Confirmar</button>
         </div>

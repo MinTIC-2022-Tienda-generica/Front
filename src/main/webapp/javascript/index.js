@@ -13,8 +13,8 @@ botonIngresar.addEventListener("click",()=>{
 				xhrFields: {withCredentials: true},	/*Crear la sesión del usuario en si.*/
 		        contentType: "application/json",
 		        data: JSON.stringify({
-		        	password: contrasena,
 		        	username: usuario,
+					password: contrasena,
 		        }),
 			success: function(){  					/* Función que se ejecuta cuando es completado con exito */ 
 				window.location="usuarios.jsp";	  

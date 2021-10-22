@@ -15,6 +15,7 @@ const toJson = (text) => {
 };
 
 document.querySelector("#botonCargar").addEventListener("click", (mouse) => {
+	const tableBody = document.getElementById('table-body');
 	let file = document.querySelector("#fileSelector").files[0];
 	if(file){
 		let reader = new FileReader();
@@ -28,8 +29,6 @@ document.querySelector("#botonCargar").addEventListener("click", (mouse) => {
 				contentType: "application/json",
 				data: JSON.stringify(json) ,						
 				success: function(){
-					console.log("Funciona");
-					console.log(json);
 					swal('Éxito','Carga de archivo con éxito','success');
 				},							
 				error: function(error){	
@@ -41,5 +40,29 @@ document.querySelector("#botonCargar").addEventListener("click", (mouse) => {
 				}										
 			})
 		};
+		
+		$.ajax({ 										
+			url: "http://localhost:8000/productos",	
+			type: "GET", 							
+		success: function(productos){  
+			let html = "";			 
+			for(let producto of productos){
+				let row = `<tr>
+								<td>${producto.codigoProducto}</td>
+								<td>${producto.nombreProducto}</td>
+								<td>${producto.nitProveedor}</td>
+								<td>$${producto.precioCompra}</td>
+								<td>${producto.ivaCompra}</td>
+								<td>$${producto.precioVenta}</td>
+							</tr>` /*Uso de comilla simple invertida, donde creamos cada celda*/
+				html += row;	
+			}
+			tableBody.innerHTML = html;
+		},							
+		error: function(error){					
+			console.log("Error: ", error);
+			},										
+		})
 	}
+		
 });

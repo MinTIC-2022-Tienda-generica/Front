@@ -92,13 +92,52 @@ for (let i = 0; i < 3; i++) {
 	cantidadProductos[i].addEventListener("change", (ev) => {
 		valoresProductos[i].value = productos[i].precioCompra * cantidadProductos[i].value;
 	});
+	cantidadProductos[i].addEventListener("keyup", (ev) => {
+		valoresProductos[i].value = productos[i].precioCompra * cantidadProductos[i].value;
+	});
 }
 confirmar.addEventListener("click", () => {
 	let totalTemp = 0;
+	let detalles = [];
 	for (let i = 0; i < 3; i++) {
 		totalTemp += Number(valoresProductos[i].value);
 	}
 	Total.value = totalTemp;
 	TotalIva.value = Total.value * 0.19;
 	totalVenta.value = Total.value - TotalIva.value;
+
+	for (let i = 0; i < productos.length; i++) {
+		detalles.push({
+			cantidadProducto: cantidadProductos[i].value,
+			codigoProducto: codigosProductos[i].value,
+			codigoVenta: Consecutivo.value,
+			valorIva: productos[i].ivaCompra,
+			valorVenta: productos[i].precioCompra,
+			valorTotal: productos[i].precioCompra * (1 + productos[i].ivaCompra / 100),
+		});
+	}
+
+	$.ajax({
+		url: "http://localhost:8000/ventas",
+		type: "POST",
+		contentType: "application/json",
+		data: JSON.stringify({
+			venta: {
+				codigoVenta: Consecutivo.value,
+				cedulaCliente: Cedula.value,
+				cedulaUsuario: -1,
+				ivaventa: 19,
+				valorVenta: Total.value,
+				totalVenta: -1,
+			},
+			detalles: detalles,
+		}),
+		success: function () {
+			swal("Éxito", "Venta registrada con éxito", "success");
+		},
+		error: function (error) {
+			console.trace(error);
+			swal("Advertencia", "Error al registrar venta --Ver Trace de errores.", "warning");
+		},
+	});
 });

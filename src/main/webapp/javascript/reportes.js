@@ -85,27 +85,31 @@ listVentas.addEventListener("click",()=>{
 	$.ajax({ 										
 			url: "http://localhost:8000/ventas",	
 			type: "GET", 							
-		success: function(data){  
+		success: function(ventas){  
 			let html = "";	/*Para que cada usuario se cree una fila */
 			let html1 = "";				 
-			for(let venta of data){ /* Usuario de la base de datos */
-				let row__princ = `<thead>
+			for(let venta of ventas){ /* Usuario de la base de datos */
+				if(ventas == null){
+					swal("Advertencia", "No se puede generar tabla, taabla de ventas vacia", "warning");
+				}else{
+									let row__princ = `<thead>
 										<tr>
 											<th scope="col">Cedula</th>
-											<th scope="col">Nombre</th>
+											<th scope="col">Codigo de venta</th>
 											<th scope="col">Valor Total Ventas</th>
 										</tr>
 									</thead>`
 				html1 = row__princ;
 				let row = `<tr>
-								<td> ${venta.cedulaCliente} </td>
-								<td> ${cliente.nombreCliente} </td>
-								<td> ${venta.totalVenta} </td>
+								<td> ${venta.cedulaCliente}</td>
+								<td> ${venta.codigoVenta} </td>
+								<td> ${venta.valorVenta} </td>
 							</tr>` /*Uso de comilla simple invertida, donde creamos cada celda*/
 				html += row;	
+				}
+				tableHead.innerHTML = html1;
+				tableBody.innerHTML = html;
 			}
-			tableHead.innerHTML = html1;
-			tableBody.innerHTML = html;
 		},							
 		error: function(error){					
 			console.log("Error: ", error);

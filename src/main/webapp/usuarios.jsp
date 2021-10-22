@@ -52,7 +52,7 @@
 					</div>
 					<div class="mb-2">
 						<label for="InputContrasena" class="form-label">Contraseña</label>
-						<input type="text" class="form-control" id="Inputcontrasena" name="Inputcontrasena" disabled>
+						<input type="text" class="form-control" id="Inputcontrasena" name="Inputcontrasena">
 	               	</div>
 	            </div>
 	            <div class="col-lg-12 col-12">

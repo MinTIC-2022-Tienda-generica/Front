@@ -59,7 +59,7 @@ consultarCed.addEventListener("click", () => {
 					swal("Advertencia", "El usuario no se encuentra en la base de datos.", "warning");
 				}
 			} else {
-				swal("Error", "Por favor ingresar cédula para consultar", "error");
+				swal("Error", "Por favor ingresar cedula para consultar", "error");
 			}
 		},
 		error: function (error) {
@@ -85,7 +85,7 @@ for (let i = 0; i < 3; i++) {
 			},
 			error: function (error) {
 				console.log("Error: ", error);
-				swal("Advertencia", "El código no se encuentra en la base de datos", "warning");
+				swal("Advertencia", "El codigo no se encuentra en la base de datos", "warning");
 			},
 		});
 	});
@@ -133,11 +133,11 @@ confirmar.addEventListener("click", () => {
 			detalles: detalles,
 		}),
 		success: function () {
-			swal("Éxito", "Venta registrada con éxito", "success");
+			swal("Exito", "Venta registrada con exito", "success");
 		},
 		error: function (error) {
 			console.trace(error);
-			swal("Advertencia", "Error al registrar venta --Ver Trace de errores.", "warning");
+			swal("Advertencia", "Error al registrar venta: Ver trace de errores.", "warning");
 		},
 	});
 });

@@ -34,10 +34,9 @@ body {
 }
 
 li a{
-	 text-decoration: none;
+	text-decoration: none;
      color: black;
      padding: 0px 10px;
-     
  }
 
 li a:hover{
@@ -89,4 +88,8 @@ li a:hover{
 
 .background h3{
 	padding: 20px 10px 40px 10px;
+}
+
+.container{
+	max-width: 1135px;
 }

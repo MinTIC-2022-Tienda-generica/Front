@@ -34,6 +34,7 @@ body {
 }
 
 li a{
+	text-decoration: none;
      color: black;
      padding: 0px 10px;
  }

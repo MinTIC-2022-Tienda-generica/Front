@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-image: url("http://itectehuacan.edu.mx/TutoriasFinalSistema/Imagenes/backgrounds/1.jpg");
+    background-attachment: fixed;
+    font-family: 'Muli', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #fdfdfdb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img{
+    width: 60px;
+    margin: 10px;
+}
+
+.header__title{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+}
+
+li a{
+     color: black;
+     padding: 0px 10px;
+ }
+
+li a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+ .header__salir{ 
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+ }
+
+ .header__salir ul{
+     list-style: none;
+     padding: 0px 0px 0px 10px;
+     margin: 0px;
+ }
+
+ .header__salir ul:hover{
+     list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.background{
+    height: 100vh;
+    background-color: #fdfdfd75;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.background h3{
+	padding: 20px 10px 40px 10px;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    color: white;
+    background-color: #3097D2;
+    margin: 0px 5px 0px 5px;
+    width: 100px;
+    height: 23px;
+    border:1px solid #3296D2;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.fila{
+	display: flex;
+	justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+.filas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filaTotales{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+
+.filaTotales input{
+    margin-right: 5px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.897);
+    letter-spacing: 2px;
+}

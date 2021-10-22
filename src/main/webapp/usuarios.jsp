@@ -29,7 +29,7 @@
         </header>
 
         <div class="container background" >
-            <h3>Bienvenido, usted tiene permiso de administrador.</h3>
+            <h3>Bienvenido, usted tiene permisos de administrador.</h3>
 			<div class="row">
 	       		<div class="col-lg-6 col-12">
 					<div class="mb-2" >
@@ -52,7 +52,7 @@
 					</div>
 					<div class="mb-2">
 						<label for="InputContrasena" class="form-label">Contraseña</label>
-						<input type="text" class="form-control" id="Inputcontrasena" name="Inputcontrasena">
+						<input type="text" class="form-control" id="Inputcontrasena" name="Inputcontrasena" disabled>
 	               	</div>
 	            </div>
 	            <div class="col-lg-12 col-12">

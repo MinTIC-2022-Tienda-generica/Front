@@ -28,7 +28,7 @@
         </header>
 
         <div class="container background" >
-            <h3>Bienvenido, usted tiene permiso de administrador.</h3>
+            <h3>Bienvenido, usted tiene permisos de administrador.</h3>
 			<div class="row centro">
 	       		<div class="col-lg-8 col-6 archivo carga">
 					<div class="mb-2" >

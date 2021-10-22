@@ -27,7 +27,7 @@
         </header>
 
         <div class="container background" >
-            <h3>Bienvenido, usted tiene permiso de administrador.</h3>
+            <h3>Bienvenido, usted tiene permisos de administrador.</h3>
 			<div class="row centro"> 
                 <div class="mb-2 botones">
                     <button id="btn__list--usuarios">Listado de usuarios</button>

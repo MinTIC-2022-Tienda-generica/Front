@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-image: url("http://itectehuacan.edu.mx/TutoriasFinalSistema/Imagenes/backgrounds/1.jpg");
+    background-attachment: fixed;
+    font-family: 'Muli', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #fdfdfdb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img{
+    width: 60px;
+    margin: 10px;
+}
+
+.header__title{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+}
+
+li a{
+     color: black;
+     padding: 0px 10px;
+ }
+
+li a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+ .header__salir{ 
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+ }
+
+ .header__salir ul{
+     list-style: none;
+     padding: 0px 0px 0px 10px;
+     margin: 0px;
+ }
+
+ .header__salir ul:hover{
+     list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.background{
+    height: 90vh;
+    background-color: #fdfdfd75;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botones button{
+    background-color: #3097D2;
+    width: 150px;
+    margin-right: 30px;
+    height: 40px;
+    border:1px solid #3296D2;
+    border-radius: 20px;
+}
+
+.background h3{
+	padding: 20px 10px 40px 10px;
+}

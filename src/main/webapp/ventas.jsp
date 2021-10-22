@@ -122,7 +122,7 @@
                 <label for="total">Total con IVA</label><br />
                 <input type="number" id="total" name="total" disabled/>     
             </div>
-            <div>
+            <div  class="confirmar">
                 <button id="btn__confirmar">Confirmar</button>
             </div>
 	    </div>

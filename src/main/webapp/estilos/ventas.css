@@ -128,3 +128,21 @@ input{
     background-color: rgba(255, 255, 255, 0.897);
     letter-spacing: 2px;
 }
+
+.confirmar{
+    display: flex;
+    justify-content: end;
+}
+
+.confirmar button{
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #2E8DC5;
+    letter-spacing: 3px;
+}
+
+button:hover{
+   cursor: pointer ;
+}
